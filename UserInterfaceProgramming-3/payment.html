@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Menu system</title>
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/payment.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function (){
+			getOrderInfo();
+		});
+		</script>
+	</head>
+
+	<body>	
+	<div id="profileBlock">
+		<div id="profilePicture">
+			<img src="assets/pictures/tor.jpg">
+		</div>
+		<p>CAPTAIN TOR</p>
+	</div>
+
+		<div id="sideBar">
+			<div id = "sideMenuContent">
+				<hr>
+				<a href="vip_index.html">ORDER MENU</a>
+				<hr>	
+				<a href="order_history.html">HISTORY</a>
+				<hr>
+				<a href="stock.html">STOCK</a>
+				<hr>
+				<a href="credits.html">CREDITS</a>		
+				<hr>	
+			</div>
+			<button id="signOutButton">Sign out</button>
+		</div>
+			
+		<div id="menuAndOrdersContent">
+			<h1>THE FLYING DUTCHMAN</h1>
+			<div id="topMenuLeftTableOrders">
+				<div id = "topMenuContentLeft">							
+				</div>
+			<div id="creditsList">
+				<p>Your Credits: </p>
+				<input id="currentCredits" type="text" value="450.00" readonly></br>
+				<input id="inputCredit" type="text" placeholder="Pay with your credit">
+				<p id="hint">*Please enter how much you want to pay with credit.</p>
+				<br>
+			<button id="cashOutCreditsButton">Confirm Payment</button>
+			<button id="addCreditsButton">Skip</button>
+			</div>
+			</div>
+		</div>
+	</body>		
+</html>

@@ -1,0 +1,68 @@
+#orderHistoryList {
+    background-color: #ffffffcf;
+    height: 400px;
+    overflow: scroll;
+    margin-top: 0px;
+    font-size: 14px;
+    text-align: left;
+	padding: 15px 40px;
+	list-style: none;
+}
+#orderHistoryList p{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #03425F;
+}
+#orderHistoryList>li{
+    line-height: 40px;
+	text-align: center;
+	border-bottom:1px #8E8E8E dashed;
+}
+#orderHistoryList span{
+	display: inline-block;
+	width: 10%;
+	vertical-align: top;
+}
+#orderHistoryList li span{
+	color: #03425F;
+	font-size: 16px;
+}
+#orderHistoryList .tOrder span{
+	font-weight: bold;
+}
+#orderHistoryList li .orderNum{
+	width: 50px;
+}
+#orderHistoryList .orderItems{
+	width: 380px;
+}
+#orderHistoryList .orderItems .itemName{
+	text-align: left;
+}
+#orderHistoryList .tOrder .orderItems .itemName{
+	text-align: center;
+}
+#orderHistoryList .orderItems .itemAmount, #orderHistoryList .orderItems .itemTotalPrice{
+	width: 70px;
+}
+#orderHistoryList li .itemName{
+	width: 230px;
+	margin: 0;
+}
+#orderHistoryList li .timeStamp{
+	width: 200px;
+}
+#orderHistoryList li .cancelOrder{
+	background-color: whitesmoke;
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 14px;
+    font-family: Montserrat;
+	outline: none;
+}
+.orderItems>ul{
+	list-style: none;
+	padding-left:0;
+}

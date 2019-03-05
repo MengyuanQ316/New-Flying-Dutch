@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Menu system</title>
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/orderHistory.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/DB.js"></script>
+	</head>
+
+	<body>	
+	<div id="profileBlock">
+		<div id="profilePicture">
+			<img src="assets/pictures/tor.jpg">
+		</div>
+		<p>CAPTAIN TOR</p>
+	</div>
+
+		<div id="sideBar">
+			<div id = "sideMenuContent">
+				<hr>
+				<a href="vip_index.html">ORDER MENU</a>
+				<hr>	
+				<a href="order_history.html">HISTORY</a>
+				<hr>
+				<a href="stock.html">STOCK</a>
+				<hr>
+				<a href="credits.html">CREDITS</a>			
+				<hr>	
+			</div>
+			<button id="signOutButton">Sign out</button>
+		</div>
+			
+		<div id="menuAndOrdersContent">
+			<h1>THE FLYING DUTCHMAN</h1>
+			<div id="topMenuLeftTableOrders">
+				<div id = "topMenuContentLeft">							
+				</div>
+			<ul id="orderHistoryList">
+				<p>Order History</p>
+				<li class="tOrder">
+					<span class="orderID">Order ID</span>
+					<span class="orderItems">
+						<span class="itemName">Product Name</span>
+						<span class="itemAmount">Amount</span>
+						<span class="itemTotalPrice">Price</span>
+					</span>
+					<span class="orderTotalPrice">Total Price</span>
+					<span class="timeStamp">Time Stamp</span>
+					<button class="cancelButton" style="visibility:hidden">Cancel</button>
+				</li>
+			</ul>
+			</div>
+		</div>
+	<script type="text/javascript" src="assets/js/orderHistory.js"></script>
+	</body>		
+</html>

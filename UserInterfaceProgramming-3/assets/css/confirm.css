@@ -1,0 +1,54 @@
+/*Confirm page*/
+#topMenuLeftTableOrders{
+    background-color: #ffffffcf;
+	height:85%;
+}
+#orderConfirmList {
+    background-color: #ffffffcf;
+    height: 400px;
+    overflow: scroll;
+    margin-top: 0px;
+    font-size: 14px;
+    text-align: left;
+	padding: 15px 40px;
+	list-style: none;
+}
+#orderConfirmList p{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+#orderConfirmList li{
+    line-height: 40px;
+	text-align: center;
+}
+#orderConfirmList li span{
+	display: inline-block;
+	width: 10%;
+}
+#orderConfirmList li .itemID{
+	width: 50px;
+}
+#orderConfirmList li .itemName{
+	width: 250px;
+	margin: 0;
+}
+#totalPrice{
+	margin-top: -100px;
+	padding-left:30%;
+}
+#tp{
+	margin-left:-66%;
+}
+#topMenuLeftTableOrders button{
+	background-color: whitesmoke;
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    width: 120px;
+    height: 40px;
+    margin-left: 14px;
+    font-family: Montserrat;
+    font-weight: bold;
+}

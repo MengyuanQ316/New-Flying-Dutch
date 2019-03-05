@@ -1,0 +1,566 @@
+/*General*/
+
+html 
+{
+	background-color:#ffffffcf;
+	background-size: 20%;
+	font-family: arial;
+	font-size: 12pt;
+	overflow-y: scroll;
+}
+
+body {
+	margin:0px;
+    min-width: 1050px;}
+
+hr
+{
+	background-color: #03425F;
+	border: none;
+	height: 1px;
+}
+
+a:link 
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+a:visited 
+{
+	color: #000000;
+    text-decoration: none;
+}
+
+#profilePicture img
+{
+	height:100px;
+	width:100px;
+	position:fixed;
+	border-radius:50%;
+	top:20px;
+	left:25px;
+	z-index:1;
+}
+
+#sideBar
+{
+	background-color: #000;
+    box-shadow: 3px 0 4px #888888;
+	color:white;
+	height: 100%; /* 100% Full-height */
+	width: 150px;
+	position: fixed; /* Stay in place */
+	top:0px;
+	left: 0;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 150px; /* Place content 60px from the top */
+}
+
+#profileBlock
+{
+    color: white;
+    font-size: 13px;
+    position: fixed;
+	font-family: Bookman Old Style;
+    z-index: 1;
+	font-weight:bold;
+    left: 25px;
+    top: 120px;
+    width: 150px;}
+
+#sideMenuContent
+{
+	background-color:white;
+}
+
+#sideMenuContent a
+{
+	padding-left:10px;
+	padding-top:10px;
+	font-family:Bookman Old Style;
+	font-weight:bold;
+}
+
+#topMenuLeft
+{
+	background:transparent;
+	font-size: 15pt;
+	font-family: LiberationSans;
+	color: #03425F;
+	text-align:center;
+	float:left;
+	width:50%;
+	top:0;
+	margin-top:-450px;
+}
+
+#topMenuLeftTableOrders {
+	background:transparent;
+	font-size: 15pt;
+	font-family: LiberationSans;
+	color: #03425F;
+	text-align:center;
+	float:left;
+	width:100%;
+	top:0;
+	margin-top:-450px;
+}
+
+#topMenuLeft p 
+{
+	font-family:arial;
+	margin-bottom:0px;
+}
+
+#menuAndOrdersContent
+{	
+	background:transparent;
+	margin-left:145px;
+	height:500px;
+	margin-top:0px;
+}	
+#topMenuRight
+{	
+	background:transparent;
+	font-size: 15pt;
+	font-family: LiberationSans;
+	color: #03425F;
+	text-align:center;
+	float:right;
+	width:50%;
+	top:0;
+}	
+
+#menuAndOrdersContent#topMenuContentRight
+{ 
+    background-color: #ffffffcf;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px 10px 0px 0px;
+	font-family: arial;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 19px;
+	padding-top:10px;
+    color: black;
+	margin-top: -450px;
+}
+
+#topMenuRight p {
+    background-color: #ffffffcf;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px 10px 0px 0px;
+	font-family: arial;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 19px;
+	padding-top:10px;
+    color: black;
+	margin-top: -450px;}
+	
+#orderList
+{
+	background-color:#ffffffcf;
+	height:400px;
+	overflow:scroll;
+	margin-top:0px;
+	font-size:14px;
+	text-align:left;
+	padding-left:15px;
+	padding-top:10px;
+}
+
+#menuList
+{
+	background-color:#ffffffcf;
+	height:400px;
+	margin-top:0px;
+	overflow:scroll;
+	font-size:14px;
+	text-align:left;
+	padding-left:15px;
+	margin-bottom:0px;
+    padding-top: 10px;
+	min-width:435px;
+}
+
+#tableOrderList
+{
+	background-color:#ffffffcf;
+	height:400px;
+	margin-top:0px;
+	overflow:scroll;
+	font-size:14px;
+	width:50%;
+	text-align:left;
+	padding-left:15px;
+	margin-bottom:0px;
+    padding-top: 10px;
+	min-width:435px;
+	margin-right:0px;
+}
+
+#tableOrderList p, #tableReceiptList p
+{
+	font-family: arial;
+	font-weight: bold;
+	font-size:20px;
+	text-align:center;
+	color: black;
+}
+
+#tableReceiptList
+{
+    background-color: #ffffffcf;
+    width: 44%;
+    margin-left: 468px;
+    float: left;
+    margin-top: -410px;
+    text-align: left;
+    height: 410px;
+}
+
+#stockList
+{
+	background-color:#ffffffcf;
+	height:400px;
+	margin-top:0px;
+	overflow:scroll;
+	font-size:14px;
+	text-align:left;
+	padding-left:15px;
+	margin-bottom:0px;
+    padding-top: 10px;
+	min-width:435px;
+}
+
+#topMenuRight input {
+    padding-top: 10px;
+	margin-top: 8px;
+	float: right;
+}
+#topMenuRight #totalP{
+	float: none;
+	border:none;
+	font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    color: #AE0000;
+	margin-top: 0;
+	width: 40%;
+}
+#divSumAndTextBox h2{
+	padding-right: 10px;
+}
+
+#signOutButton 
+{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    width: 120px;
+    height: 40px;
+	margin-left:14px;
+    font-family: Montserrat;
+    font-weight: bold;
+	bottom:10px;
+	position:fixed;
+	outline: none;
+}
+
+#confirmOrderButton {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    width: 120px;
+    height: 40px;
+    font-family: Montserrat;
+    font-weight: bold;
+    margin-right: 30px;
+	outline: none;
+	float: right;
+}
+
+#confirmTableOrderButton, #tableReceiptListButton
+{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    width: 120px;
+    height: 40px;
+    font-family: Montserrat;
+    font-weight: bold;
+    float: right;
+    margin-left: 100px;	
+}
+
+h1{
+	text-align:center;
+    margin-top: 0px;
+    padding-top: 15px;
+	font-size:40px;
+	margin-bottom:0px;
+	font-family:Bookman Old Style;
+	background-color:#523939;
+	background-size:100%;
+	min-width: 860px;
+	background-image: url("../pictures/dutchman.jpg");
+	padding-bottom: 488px;
+}
+
+#tableOrdersContent h1{
+	text-align:center;
+    margin-top: 0px;
+    padding-top: 15px;
+	font-size:40px;
+	margin-bottom:0px;
+	font-family:Bookman Old Style;
+	background-color:#523939;
+	background-size:100%;
+	min-width: 860px;
+	background-image: url("../pictures/dutchman.jpg");
+	padding-bottom: 40px;
+}
+
+h2 {
+    font-size: 15px;
+    float: left;
+	color:black;
+    padding-left: 10px;
+    font-family: arial;
+    font-weight: bold;
+    margin-top: 15px;
+	}
+	
+	#divSumAndTextBox {
+	background-color: transparent;
+    width: 100%;
+    height: 50px;}
+/*
+	#beerButton, #wineButton, #whiskeyButton {
+	width:23.3%;
+	height:40px;
+    border-radius: 10px 10px 0px 0px;
+    border: 0px;
+    width: 140px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffffffcf;
+	}
+*/
+	#table1Button, #table2Button, #table3Button, #table4Button, #table5Button, #table6Button {
+	width:23.3%;
+	height:40px;
+    border-radius: 10px 10px 0px 0px;
+    border: 0px;
+    width: 140px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffffffcf;
+	}
+
+
+	#buttonPlaceholder{
+	min-width: 430px;}
+	
+	#buttonPlaceholderTableOrders{
+	min-width: 430px;
+	width:900px;}
+
+/*menu order part start*/
+.menuButton{
+	width:20%;
+	height:40px;
+    border-radius: 10px 10px 0px 0px;
+    border: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffffffcf;
+}
+.currentButton{
+	color: #fff;
+    background: #000;
+}
+.menuList
+{
+	background-color:#ffffffcf;
+	height:400px;
+	margin-top:0px;
+	overflow:scroll;
+	font-size:14px;
+	text-align:left;
+	padding-left:6%;
+	margin-bottom:0px;
+    padding-top: 20px;
+	min-width:435px;
+	font-size:20px;
+}
+/*update start*/
+.menuItem{
+	width:80%;
+	height:40px;
+    border-radius: 15px 15px 0px 15px;
+    border: 0px;
+    font-size: 15px;
+    background: #F3F1F3;
+    margin-bottom: 8px;
+    padding: 2%;
+    padding-left: 3%;
+	box-shadow: 3px 3px 2px #888888;
+	-webkit-transition-property: background;
+	-webkit-transition-duration: 0.5s;
+}
+.menuItem:hover{
+	background: #fff6e4;
+}
+/*update end*/
+.menuItem .productImg, .itemImg{
+	height: 100%;
+}
+
+.menuItem .productName, .itemName{
+	margin-left: 6px;
+	margin-top: 5px;
+	vertical-align: top;
+	color: #000;
+}
+.menuItem .price{
+	float: right;
+	color: #A64102;
+    font-family: Bookman Old Style;
+}
+.menuItem .productInfo{
+	margin-top: -20px;
+    margin-left: 26px;
+    font-size: 12px;
+	color: #000;
+}
+.menuItem .moreDetail{
+	height: 18px;
+	float: right;
+	cursor: pointer;
+}
+
+.anker-inverse{
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform:rotate(180deg);
+	transition: transform .5s;
+}
+.anker-normal{
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-moz-transform:rotate(0deg);
+	transition: transform .5s;
+}
+
+.productDetail{
+	width:80%;
+	border-radius: 15px 0px 15px 15px;
+    border: 0px;
+    font-size: 15px;
+	color: #fff;
+    background-color: #1A191E;
+    margin-bottom: 8px;
+    padding: 2%;
+    padding-left: 3%;
+	box-shadow: 3px 3px 2px #888888;
+}
+#orderList .menuItem{
+	width:90%;
+	font-size: 14px;
+}
+#orderList .menuItem input, #orderList .menuItem span{
+    vertical-align: top;
+    padding-top: 0;
+    margin-top: 8px;
+	display: inline-block;
+}
+#orderList .menuItem .totalPrice{
+	width: 72px;
+	text-align: right;
+	float: right;
+	font-family: Bookman Old Style;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	margin-right: 15px;
+}
+#orderList .menuItem .minus, #orderList .menuItem .plus{
+	width: 26px;
+	text-align: center;
+	vertical-align: middle;
+}
+#orderList .menuItem .num{
+	text-align: center;
+}
+.menuItem .delete{
+	z-index:200;
+    cursor:pointer;
+	width: 20px;
+	height: 20px;
+	float: right;
+}
+.menuItem .delete img{
+	width: 100%;
+}
+#orderList .menuItem .minus{
+	margin-left: 20px; 
+}
+#orderList .num{
+	width: 30px;
+}
+#topMenuLeft .productDetail .productNation{
+	font-family: Bookman Old Style;
+	color: #DB7B02;
+}
+
+#topMenuLeft .productDetail .productDsc{
+	font-family: LiberationSans;
+	font-size: 12px;
+}
+
+/*menu order part end*/
+
+#orderHistoryList
+{
+	background-color:#ffffffcf;
+	height:400px;
+	margin-top:0px;
+	overflow:scroll;
+	font-size:14px;
+margin-right:15px;
+	text-align:left;
+	padding-left:15px;
+	margin-bottom:0px;
+    padding-top: 10px;
+	margin-right:0px;
+}
+#orderHistoryList p, #tableReceiptList p
+{
+	font-family: arial;
+	font-weight: bold;
+	font-size:20px;
+	text-align:center;
+	color: black;
+}
+	
+#topMenuLeftStock
+{
+	background:transparent;
+	font-size: 15pt;
+	font-family: LiberationSans;
+	color: #03425F;
+	text-align:center;
+	float:left;
+	width:100%;
+	top:0;
+	margin-right:15px;
+	margin-top:-460px;
+}
+
+#totalP{
+	
+}
